@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тестирование</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="index.html" style="text-decoration: none; color: #673ab7; font-weight: 500; display: inline-block; margin-bottom: 10px;">← Вернуться в меню</a>
+            <h1>Тест по веб-технологиям</h1>
+            <p>Ответьте на вопросы и нажмите "Отправить" для проверки.</p>
+        </header>
+
+        <div id="quiz-container">
+            <!-- Questions will be injected here -->
+        </div>
+
+        <div class="pagination">
+            <button id="prev-btn" disabled>Назад</button>
+            <span id="page-info">Страница 1</span>
+            <button id="next-btn">Вперед</button>
+        </div>
+
+        <div class="controls">
+            <button id="submit-btn" class="primary-btn">Отправить ответы</button>
+            <button id="reset-btn" class="secondary-btn" style="display: none;">Пройти заново</button>
+        </div>
+
+        <div id="result-summary" class="hidden">
+            <h2>Результаты</h2>
+            <p id="score-display"></p>
+        </div>
+    </div>
+
+    <script src="questions.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
